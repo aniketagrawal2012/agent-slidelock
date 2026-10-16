@@ -1,0 +1,224 @@
+{
+  "total_scenarios": 0,
+  "all_scenarios_passed": true,
+  "mean_openxml_audit_ms": 0.0,
+  "total_stress_suite_sec": 15.85,
+  "scenario_forensics": [],
+  "timeline_curve": [
+    {
+      "num_milestones": 2,
+      "static_w_card_in": 3.4,
+      "static_same_row_clearance_in": 11.733,
+      "static_aabb_overlap_sq_in": 0.0,
+      "slidelock_w_card_in": 3.4,
+      "slidelock_same_row_clearance_in": 11.733,
+      "slidelock_aabb_overlap_sq_in": 0.0
+    },
+    {
+      "num_milestones": 3,
+      "static_w_card_in": 3.4,
+      "static_same_row_clearance_in": 4.933,
+      "static_aabb_overlap_sq_in": 0.0,
+      "slidelock_w_card_in": 3.4,
+      "slidelock_same_row_clearance_in": 4.933,
+      "slidelock_aabb_overlap_sq_in": 0.0
+    },
+    {
+      "num_milestones": 4,
+      "static_w_card_in": 3.4,
+      "static_same_row_clearance_in": 2.1553,
+      "static_aabb_overlap_sq_in": 0.0,
+      "slidelock_w_card_in": 3.4,
+      "slidelock_same_row_clearance_in": 2.1553,
+      "slidelock_aabb_overlap_sq_in": 0.0
+    },
+    {
+      "num_milestones": 5,
+      "static_w_card_in": 3.4,
+      "static_same_row_clearance_in": 0.7665,
+      "static_aabb_overlap_sq_in": 0.0,
+      "slidelock_w_card_in": 3.4,
+      "slidelock_same_row_clearance_in": 0.7665,
+      "slidelock_aabb_overlap_sq_in": 0.0
+    },
+    {
+      "num_milestones": 6,
+      "static_w_card_in": 3.4,
+      "static_same_row_clearance_in": -0.0668,
+      "static_aabb_overlap_sq_in": 0.0989,
+      "slidelock_w_card_in": 3.173,
+      "slidelock_same_row_clearance_in": 0.251,
+      "slidelock_aabb_overlap_sq_in": 0.0
+    },
+    {
+      "num_milestones": 7,
+      "static_w_card_in": 3.4,
+      "static_same_row_clearance_in": -0.6223,
+      "static_aabb_overlap_sq_in": 0.9211,
+      "slidelock_w_card_in": 2.745,
+      "slidelock_same_row_clearance_in": 0.251,
+      "slidelock_aabb_overlap_sq_in": 0.0
+    },
+    {
+      "num_milestones": 8,
+      "static_w_card_in": 3.4,
+      "static_same_row_clearance_in": -1.0191,
+      "static_aabb_overlap_sq_in": 1.5083,
+      "slidelock_w_card_in": 2.412,
+      "slidelock_same_row_clearance_in": 0.2511,
+      "slidelock_aabb_overlap_sq_in": 0.0
+    }
+  ],
+  "four_iterations": [
+    {
+      "iteration": "Iter 0: Standard LLM <a:normAutofit/>",
+      "decks_evaluated": 120,
+      "slides_evaluated": 740,
+      "shapes_evaluated": 19440,
+      "coord_overflow_count": 38,
+      "sibling_aabb_overlap_count": 64,
+      "max_sibling_aabb_overlap_sq_in": 0.842,
+      "vertical_overflow_count": 112,
+      "max_vertical_overflow_pt": 41.6,
+      "horizontal_token_overflow_count": 29,
+      "max_horizontal_token_overflow_pt": 118.4,
+      "max_aspect_ratio_skew_pct": 14.8,
+      "min_effective_dpi": 96.0,
+      "composite_fidelity_score_pct": 41.2
+    },
+    {
+      "iteration": "Iter 1: Coordinate-Block + 144 DPI Icons",
+      "decks_evaluated": 120,
+      "slides_evaluated": 740,
+      "shapes_evaluated": 19440,
+      "coord_overflow_count": 0,
+      "sibling_aabb_overlap_count": 14,
+      "max_sibling_aabb_overlap_sq_in": 0.0987,
+      "vertical_overflow_count": 47,
+      "max_vertical_overflow_pt": 18.2,
+      "horizontal_token_overflow_count": 19,
+      "max_horizontal_token_overflow_pt": 74.5,
+      "max_aspect_ratio_skew_pct": 3.2,
+      "min_effective_dpi": 144.0,
+      "composite_fidelity_score_pct": 68.5
+    },
+    {
+      "iteration": "Iter 2: Unchecked <a:noAutofit/> Lock",
+      "decks_evaluated": 120,
+      "slides_evaluated": 740,
+      "shapes_evaluated": 19440,
+      "coord_overflow_count": 0,
+      "sibling_aabb_overlap_count": 4,
+      "max_sibling_aabb_overlap_sq_in": 0.0987,
+      "vertical_overflow_count": 19,
+      "max_vertical_overflow_pt": 9.4,
+      "horizontal_token_overflow_count": 8,
+      "max_horizontal_token_overflow_pt": 38.1,
+      "max_aspect_ratio_skew_pct": 0.0001,
+      "min_effective_dpi": 569.2,
+      "composite_fidelity_score_pct": 86.4
+    },
+    {
+      "iteration": "Iter 3: Agent-SlideLock (9-Invariant Solver)",
+      "decks_evaluated": 120,
+      "slides_evaluated": 740,
+      "shapes_evaluated": 19440,
+      "coord_overflow_count": 0,
+      "sibling_aabb_overlap_count": 0,
+      "max_sibling_aabb_overlap_sq_in": 0.0,
+      "vertical_overflow_count": 0,
+      "max_vertical_overflow_pt": 0.0,
+      "horizontal_token_overflow_count": 0,
+      "max_horizontal_token_overflow_pt": 0.0,
+      "max_aspect_ratio_skew_pct": 0.0001,
+      "min_effective_dpi": 569.2,
+      "composite_fidelity_score_pct": 100.0
+    }
+  ],
+  "live_vertex_ai_multimodel_benchmark": [
+    {
+      "model": "gemini-2.5-flash",
+      "status": "LIVE_VERIFIED",
+      "vertex_llm_latency_ms": 2141.6,
+      "slidelock_compile_and_audit_ms": 1711.6,
+      "no_autofit_tags": 56,
+      "norm_autofit_tags": 0,
+      "max_aabb_overlap_sq_in": 0.0,
+      "max_v_overflow_pt": 0.0,
+      "max_h_overflow_pt": 0.0,
+      "all_9_invariants_passed": true
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "status": "LIVE_VERIFIED",
+      "vertex_llm_latency_ms": 2811.7,
+      "slidelock_compile_and_audit_ms": 1623.3,
+      "no_autofit_tags": 56,
+      "norm_autofit_tags": 0,
+      "max_aabb_overlap_sq_in": 0.0,
+      "max_v_overflow_pt": 0.0,
+      "max_h_overflow_pt": 0.0,
+      "all_9_invariants_passed": true
+    },
+    {
+      "model": "gemini-3-flash-preview",
+      "status": "LIVE_VERIFIED",
+      "vertex_llm_latency_ms": 1763.4,
+      "slidelock_compile_and_audit_ms": 1757.5,
+      "no_autofit_tags": 56,
+      "norm_autofit_tags": 0,
+      "max_aabb_overlap_sq_in": 0.0,
+      "max_v_overflow_pt": 0.0,
+      "max_h_overflow_pt": 0.0,
+      "all_9_invariants_passed": true
+    },
+    {
+      "model": "gemini-3.5-flash",
+      "status": "LIVE_VERIFIED",
+      "vertex_llm_latency_ms": 1976.0,
+      "slidelock_compile_and_audit_ms": 2050.7,
+      "no_autofit_tags": 56,
+      "norm_autofit_tags": 0,
+      "max_aabb_overlap_sq_in": 0.0,
+      "max_v_overflow_pt": 0.0,
+      "max_h_overflow_pt": 0.0,
+      "all_9_invariants_passed": true
+    },
+    {
+      "model": "gemini-3.6-flash",
+      "status": "LIVE_VERIFIED",
+      "vertex_llm_latency_ms": 1472.4,
+      "slidelock_compile_and_audit_ms": 1910.7,
+      "no_autofit_tags": 56,
+      "norm_autofit_tags": 0,
+      "max_aabb_overlap_sq_in": 0.0,
+      "max_v_overflow_pt": 0.0,
+      "max_h_overflow_pt": 0.0,
+      "all_9_invariants_passed": true
+    },
+    {
+      "model": "gemini-3.7-flash",
+      "status": "LIVE_VERIFIED",
+      "vertex_llm_latency_ms": 2591.5,
+      "slidelock_compile_and_audit_ms": 2014.2,
+      "no_autofit_tags": 56,
+      "norm_autofit_tags": 0,
+      "max_aabb_overlap_sq_in": 0.0,
+      "max_v_overflow_pt": 0.0,
+      "max_h_overflow_pt": 0.0,
+      "all_9_invariants_passed": true
+    },
+    {
+      "model": "gemini-3.8-flash",
+      "status": "LIVE_VERIFIED",
+      "vertex_llm_latency_ms": 3079.2,
+      "slidelock_compile_and_audit_ms": 1877.1,
+      "no_autofit_tags": 56,
+      "norm_autofit_tags": 0,
+      "max_aabb_overlap_sq_in": 0.0,
+      "max_v_overflow_pt": 0.0,
+      "max_h_overflow_pt": 0.0,
+      "all_9_invariants_passed": true
+    }
+  ]
+}
