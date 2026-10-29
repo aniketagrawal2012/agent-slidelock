@@ -118,7 +118,7 @@ A computer-implemented method for pre-render TrueType glyph-metric bounding-box 
 ### Claim 3 (Independent Non-Transitory CRM Claim)
 A non-transitory computer-readable storage medium storing executable instructions that, when executed by one or more processors of a cloud computing platform, perform the method of Claim 2.
 
-### Claims 4–10 (Dependent Claims)
+### Claims 4–12 (Dependent Claims)
 * **Claim 4**: The system of Claim 1, wherein when $H_{\text{total}}(f_{\min}) > H_{\text{eff}}$ at a minimum legible font floor $f_{\min}$, the solver executes a word-boundary binary search to find a maximum prefix of the paragraph that fits within $H_{\text{eff}}$ when suffixed with an ellipsis token.
 * **Claim 5**: The system of Claim 1, wherein the unbroken token segmentation prioritizes semantic delimiter breakpoints comprising `/`, `_`, `-`, `.`, `:`, `?`, `&`, and `=` before falling back to character-width slices.
 * **Claim 6**: The system of Claim 1, further comprising a post-compilation ZIP/DOM forensic verifier that unzips `ppt/slides/slide*.xml`, verifies the absence of `<a:normAutofit/>` tags, and audits all 9 mathematical invariants prior to returning a download URI to the user.
@@ -126,6 +126,8 @@ A non-transitory computer-readable storage medium storing executable instruction
 * **Claim 8**: The system of Claim 1, wherein all embedded `<p:pic>` visual assets are rasterized at `@4x` Retina super-sampling density yielding an effective print/display resolution of at least $569.2\text{ DPI}$ at target EMU box dimensions.
 * **Claim 9**: The system of Claim 1, integrated as a deterministic tool inside a Google Cloud Vertex AI Agent Development Kit (ADK) multi-agent pipeline orchestrated by a Gemini foundation model.
 * **Claim 10**: The system of Claim 6, wherein any invariant violation triggers an automated self-healing recompilation pass before the `.pptx` artifact is committed to cloud storage.
+* **Claim 11 (Native OpenXML `<a:tbl>` Table Cell-Width Reflow & Row-Height Synchronization)**: The system of Claim 1, further configured to compile native DrawingML tables (`<a:tbl>`) by apportioning column widths `<a:gridCol w="..."/>` in integer EMUs proportional to square-root token-length demand bounded by minimum legible column floors, solving cell-level font sizes $f_{r,c}$ across each row $r$ via the TrueType `hmtx`/`cmap` solver, and locking each row height `<a:tr h="..."/>` to $\max_{c} H_{\text{total}}(p_{r,c}, f_{r,c}) + m_T + m_B$ so that table height satisfies $\sum_{r} h_r \le H_{\text{table\_max}}$ with zero vertical cell overflow.
+* **Claim 12 (Parametric Fallback Glyph-Width Calibration & Cross-Renderer Fidelity)**: The system of Claim 1, wherein when a proprietary client brand TrueType font binary (`.ttf`/`.otf`) is unavailable in the headless compilation container, the solver applies a character-class parametric advance-width table (calibrated across uppercase, lowercase, numeric, narrow-punctuation, and CJK/wide glyph classes with a $+4.5\%$ cross-platform safety margin) to guarantee zero vertical or horizontal bleed across Microsoft PowerPoint (`DirectWrite`), Apple Keynote (`CoreText`), Google Workspace Slides, and LibreOffice Impress.
 
 ---
 
@@ -133,6 +135,6 @@ A non-transitory computer-readable storage medium storing executable instruction
 
 * **Live GitHub Repository**: `https://github.com/aniketagrawal2012/agent-slidelock`
 * **Core Compiler & Forensic Inspector**: `slidelock_compiler.py`
-* **Unit & Negative-Control Test Suite**: `test_agent_slidelock.py` (6/6 tests passing, `0` errors)
+* **Unit & Negative-Control Test Suite**: `test_agent_slidelock.py` (7/7 tests passing, `0` errors)
 * **120-Deck & Live Gemini (2.5 -> 3.8 Flash) Benchmark**: `run_slidelock_benchmark.py` & `slidelock_benchmark_results.json`
 * **Camera-Ready IEEEtran Research Paper**: `agent_slidelock_paper.tex` & `Agent_SlideLock_Paper.pdf`
